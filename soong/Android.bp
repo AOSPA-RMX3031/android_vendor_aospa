@@ -113,6 +113,7 @@ soong_config_module_type {
     bool_variables: ["uses_oplus_camera"],
     properties: ["cppflags"],
 }
+
 uses_oplus_camera {
     name: "uses_oplus_camera_defaults",
     soong_config_variables: {
@@ -135,6 +136,26 @@ uses_nothing_camera {
     soong_config_variables: {
         uses_nothing_camera: {
             cppflags: ["-DUSES_NOTHING_CAMERA"],
+        },
+    },
+}
+
+soong_config_module_type {
+    name: "aapt_version_code",
+    module_type: "java_defaults",
+    config_namespace: "aospaGlobalVars",
+    value_variables: ["aapt_version_code"],
+    properties: ["aaptflags"],
+}
+
+aapt_version_code {
+    name: "aapt_version_code_defaults",
+    soong_config_variables: {
+        aapt_version_code: {
+            aaptflags: [
+                "--version-code",
+                "%s",
+            ],
         },
     },
 }
