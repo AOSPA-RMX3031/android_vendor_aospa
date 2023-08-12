@@ -50,6 +50,7 @@ PRODUCT_MAKEFILES += \
     $(LOCAL_DIR)/sunny/aospa_sunny.mk \
     $(LOCAL_DIR)/surya/aospa_surya.mk \
     $(LOCAL_DIR)/RM6785/aospa_RM6785.mk \
+    $(LOCAL_DIR)/RMX3031/aospa_RMX3031.mk \
     $(LOCAL_DIR)/vayu/aospa_vayu.mk
 
 # Lunch targets
@@ -90,4 +91,5 @@ COMMON_LUNCH_CHOICES += \
     aospa_sunny-userdebug \
     aospa_surya-userdebug \
     aospa_RM6785-userdebug \
+    aospa_RMX3031-userdebug \
     aospa_vayu-userdebug
